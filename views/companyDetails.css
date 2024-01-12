@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.companyTitle{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.companyImg{
+    margin-left: 30px;
+    height: 110px;
+  width: 110px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.companyNameTag{
+    margin-left: 30px;
+
+}
+
+.companyDetailsContainer{
+    display: flex;
+    height: 60vh;
+}
+
+.companyField1{
+    border: 2px solid red;
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+}
+
+.companyField2{
+    border: 2px solid red;
+    height: 100%;
+    width: 80%;
+    padding: 20px;
+}
