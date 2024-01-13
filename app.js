@@ -9,12 +9,13 @@ app.set('view engine', 'ejs')
 
 // Routing 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render("index")
 })
 
 app.get('/companydetails',(req,res)=>{
   res.render('companyDetails')
 })
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
