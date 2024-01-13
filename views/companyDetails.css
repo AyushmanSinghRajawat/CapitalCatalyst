@@ -1,47 +1,114 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
-.companyTitle{
+.companyConatiner {
+    height: 100vh;
+    position: fixed;
+}
+
+.companyTitle {
     display: flex;
-    height: 150px;
+    height: 180px;
     align-items: center;
-    background-color: antiquewhite;
+    background-image: url('./assets/pexels-steve-johnson-1070527.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* object-fit: cover; */
+    overflow: hidden;
 }
 
-.companyImg{
-    margin-left: 30px;
+.companyImg {
+    margin-left: 50px;
     height: 110px;
-  width: 110px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
 
 }
 
-.companyNameTag{
+.companyImg img{
+    height: 220px; 
+    object-fit: cover;
+    background-color: #edededd4;
+}
+
+.companyNameTag {
     margin-left: 30px;
+    color: #ffffff;
+    font-weight:bolder;
+    font-family: sans-serif;
 
 }
 
-.companyDetailsContainer{
+.companyDetailsContainer {
     display: flex;
     height: 60vh;
 }
 
-.companyField1{
-    border: 2px solid red;
+
+.companyField1 {
     height: 100%;
-    width: 20%;
+    width: 15%;
     padding: 20px;
+
 }
 
-.companyField2{
-    border: 2px solid red;
-    height: 100%;
+.companyField1 a {
+    margin: 8px 10px 4px 5px;
+    text-decoration: none;
+    transition: margin 0.4s ease;
+    color:black;
+    font-family:'Franklin Gothic Medium', Arial, Helvetica;
+}
+
+.companyField1 a:hover {
+    text-decoration: underline;
+    margin: 8px 10px 5px 12px;
+}
+
+.toc-2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.companyField2 {
+    height: 118%;
     width: 80%;
-    padding: 20px;
+    overflow: hidden;
+}
+
+
+.toc-h2::before {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 2px;
+    background-color: #f2c32a;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.toc-h2::after {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 2px;
+    background-color: #f2c32a;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
 }
