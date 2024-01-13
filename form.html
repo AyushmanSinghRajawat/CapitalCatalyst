@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px 0;
+            color: #fff;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            border-color: #fff;
+
+        }
+        h1 {
+            text-align: center;
+            border: 5px;;
+            border-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Investor Profile Form</title> 
+</head>
+<body style="background-color: black; color: white;">
+    <div class="container col-lg-10 px-4 mb-0 pb-0">
+            <div class="col-lg-10 my-md-0 py-0 border border-3 rounded-5 mx-md-auto" style="background-color: black;">
+            <h1 class="display-5 mt-0 pt-0 border-1 fw-bold lh-1">Investor Profile Form</h1>
+            <form class="mt-1 pt-1">
+                <!-- Question 1 -->
+                <div class="mb-0">
+                    <label for="investmentInterests" class="form-label">1. What type of projects are you most interested in?</label>
+                    <div>
+                        <input type="checkbox" name="investmentInterests" value="newlyFundedStartups" class="form-check-input"> Newly funded startups<br>
+                        <input type="checkbox" name="investmentInterests" value="seedRounds" class="form-check-input"> Projects looking for seed rounds<br>
+                        <input type="checkbox" name="investmentInterests" value="localBusinesses" class="form-check-input"> Local stores, shops, or franchise owners
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="mb-3">
+                    <label for="riskTolerance" class="form-label">2. On a scale of 1 to 5, how would you rate your risk tolerance?</label>
+                    <div>
+                        <input type="checkbox" name="riskTolerance" value="1" class="form-check-input"> 1 (Low risk)<br>
+                        <input type="checkbox" name="riskTolerance" value="2" class="form-check-input"> 2<br>
+                        <input type="checkbox" name="riskTolerance" value="3" class="form-check-input"> 3<br>
+                        <input type="checkbox" name="riskTolerance" value="4" class="form-check-input"> 4<br>
+                        <input type="checkbox" name="riskTolerance" value="5" class="form-check-input"> 5 (High risk)
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="mb-3">
+                    <label for="investmentBudgetAllocation" class="form-label">3. How do you plan to allocate your investment budget among different project types?</label>
+                    <div>
+                        <input type="checkbox" name="investmentBudgetAllocation" value="balanced" class="form-check-input"> Balanced across all types<br>
+                        <input type="checkbox" name="investmentBudgetAllocation" value="weighted" class="form-check-input"> Weighted based on interest<br>
+                        <input type="checkbox" name="investmentBudgetAllocation" value="custom" class="form-check-input"> Custom allocation (please specify)
+                        <input type="text" name="customAllocation" class="form-control" placeholder="Specify custom allocation">
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="mb-3">
+                    <label for="preferredIndustries" class="form-label">4. Are there specific sectors or industries you are particularly interested in?</label>
+                    <div>
+                        <input type="text" name="preferredIndustries" class="form-control" placeholder="Enter preferred sectors or industries">
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="mb-3">
+                    <label for="communityEngagement" class="form-label">5. Are you interested in projects that contribute to the local community or have a social impact?</label>
+                    <div>
+                        <input type="checkbox" name="communityEngagement" value="yes" class="form-check-input"> Yes<br>
+                        <input type="checkbox" name="communityEngagement" value="no" class="form-check-input"> No
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <div class="col-10 col-lg-10 col-xl-5 mx-auto">
+              <img class="d-block mx-lg-auto img-fluid rounded-3" src="./public/building-investment-abstract-concept-vector-illustration-residential-property-commercial-real-estate-financial-plan-future-wealth-city-architecture-bank-loan-housing-abstract-metaphor_335657-5760.avif" alt="">
+          </div>
+        </div>
+    </div>
+</body>
+</html>
